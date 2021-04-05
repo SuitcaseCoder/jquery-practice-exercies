@@ -7,24 +7,26 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="red">JQuery Exercises</h1>
+    <h1 id="heading" class="text">JQuery Exercises</h1>
 
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusantium, autem neque est expedita veniam.</p>
+    <p id="paragraph" class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusantium, autem neque est expedita veniam.</p>
 
-    <ul>
-        <li>Lorem, ipsum dolor.</li>
-        <li>Lorem, ipsum dolor.</li>
-        <li>Lorem, ipsum dolor.</li>
+    <ul id="unordered" class="list">
+        <li id="one" class="list-item">Lorem, ipsum dolor.</li>
+        <li id="two" class="list-item">Lorem, ipsum dolor.</li>
+        <li id="three" class="list-item">Lorem, ipsum dolor.</li>
     </ul>
+
+    <div id="div" class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam sapiente quasi unde, praesentium cum ducimus inventore nisi minima voluptates facilis voluptatem. Repellendus repudiandae ea voluptatum tenetur, tempora aliquam quasi deserunt?</div>
     
     <script src="jquery-3.6.0.js">
     </script>
 
     <script>
-        // javascript: 
-        $(document).ready(function(){
-            alert("hey the dom has finished loading");
-        })
+
+        // // ID Selectors 
+        let byId = $('#heading').text();
+        alert(byId);
     </script>
 
 </body>
